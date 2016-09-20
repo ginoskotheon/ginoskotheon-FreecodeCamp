@@ -1,0 +1,626 @@
+body{
+  background-image: url("http://www.myfreetextures.com/wp-content/uploads/2011/06/brushedsteel4.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  position: relative;
+  width: 660px;
+  height: 660px;
+  margin: 0 auto;
+
+}
+
+.back {
+  position: absolute;
+  top: 170px;
+  left: 0px;
+  width: 660px;
+  height: 660px;
+  z-index: 0;
+  background-color: #000;
+  border-radius: 320px;
+  box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.allpad {
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: 3;
+}
+
+.glasspad {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  pointer-events: none;
+}
+
+.pad {
+  width: 300px;
+  height: 300px;
+  float: left;
+  z-index: 1;
+  margin: 10px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+
+.shape1 {
+  border-top-left-radius: 300px;
+  background-color: green;
+  cursor: pointer;
+}
+
+.shape1:active {
+  background: #00FF00;
+  opacity: 1;
+}
+
+.shapegreenon {
+  background: #00FF00;
+  opacity: 1;
+}
+
+.shape1glass {
+  margin-left: 0px;
+  margin-top: 0px;
+  border-top-left-radius: 300px;
+  background: rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 1px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.shape2 {
+  float: left;
+  border-top-right-radius: 300px;
+  background-color: red;
+  clear: right;
+  cursor: pointer;
+}
+
+.shape2:active {
+  background: #FF0000;
+  opacity: 1;
+}
+
+.shaperedon {
+  background: #FF0000;
+  opacity: 1;
+}
+
+.shape2glass {
+  margin-left: 10px;
+  margin-top: 0px;
+  border-top-right-radius: 300px;
+  background: rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 1px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.shape3 {
+  float: left;
+  border-bottom-left-radius: 300px;
+  background-color: yellow;
+  clear: left;
+  cursor: pointer;
+}
+
+.shape3:active {
+  background: #FFF00;
+  opacity: 1;
+}
+
+.shapeyellowon {
+  background: #FFF00;
+  opacity: 1;
+}
+
+.shape3glass {
+  margin-left: 0px;
+  margin-top: 8px;
+  border-bottom-left-radius: 300px;
+  background: rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 1px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.shape4 {
+  float: left;
+  border-bottom-right-radius: 300px;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.shape4:active {
+  background: #0000FF;
+  opacity: 1;
+}
+
+.shapeblueon {
+  background: #0000FF;
+  opacity: 1;
+}
+
+.shape4glass {
+  margin-left: 10px;
+  margin-top: 8px;
+  border-bottom-right-radius: 300px;
+  background: rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 1px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 30px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.circle {
+  border: 3px solid #000;
+  position: absolute;
+  top: 195px;
+  left: 205px;
+  width: 250px;
+  height: 250px;
+  background: silver;
+  border-radius: 125px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 1px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 10px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -10px 5px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+  z-index: 10;
+}
+
+.logo {
+  text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 20px;
+  text-shadow: 1px 4px 6px #def, 0 0 0 #ddd, 1px 1px 2px #def;
+}
+
+.indicator {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background: #000;
+  border-radius: 50%;
+  left: 199px;
+  top: 100px;
+}
+
+.indicatorLight {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: red;
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 1px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 1px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 1px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.changeLightcolor {
+  background-color: green;
+}
+
+.Buttons {
+  display: inline;
+  position: absolute;
+  top: 120px;
+  left: 60px;
+}
+
+.count {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: left;
+  height: 40px;
+  width: 50px;
+  margin-top: -5px;
+  margin-left: -40px;
+  border-radius: 5%;
+  color: orangered;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  text-align: center;
+  background-color: #000;
+}
+
+.start {
+  float: left;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 0 20px auto;
+  background-color: red;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.start:active {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 10px rgba(0, 0, 0, 0.6);
+  /* Dark Background */
+}
+
+.reset {
+  float: left;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 0px 0px auto;
+  background-color: blue;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.reset:active {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 10px rgba(0, 0, 0, 0.6);
+  /* Dark Background */
+}
+
+.strict {
+  float: right;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  background-color: yellow;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.strict:active {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 10px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 10px rgba(0, 0, 0, 0.6);
+  /* Dark Background */
+}
+
+.Buttonsback {
+  display: inline;
+  position: absolute;
+  left: 60px;
+  top: 120px;
+}
+
+.countback {
+  float: left;
+  margin-left: -45px;
+  margin-top: -10px;
+  height: 50px;
+  width: 60px;
+  border-radius: 5%;
+  background-color: #000;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 1px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -1px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.startback {
+  float: left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: -5px 10px auto;
+  background-color: black;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 1px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -1px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.resetback {
+  float: left;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: -5px 0px auto;
+  background-color: black;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 1px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -1px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.longestback {
+  float: right;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-top: -5px;
+  margin-left: 10px;
+  background-color: black;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 1px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -1px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.ButtonLabels {
+  position: absolute;
+  top: 160px;
+  left: 60px;
+}
+
+.lab1 {
+  float: left;
+  margin-left: -35px;
+}
+
+.lab2 {
+  margin: 0px 12px 0px 25px;
+}
+
+.lab3 {
+  margin-left: 0px 5px;
+}
+
+.lab4 {
+  float: right;
+  margin-left: 15px;
+}
+
+.onoff {
+  position: absolute;
+  top: 200px;
+  left: 80px;
+}
+
+.off {
+  float: left;
+  margin-left: -8px;
+  margin-top: 4px;
+}
+
+.box {
+  height: 25px;
+  width: 45px;
+  margin: -2px 30px auto;
+  background: #000;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 -2px 1px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 2px 1px rgba(255, 255, 255, 0.5), /* Sides Light Shadow */
+  inset 2px 0px 1px rgba(255, 255, 255, 0.5), /* Sides Light Shadow */
+  inset -2px 0px 1px rgba(255, 255, 255, 0.5), /* Sides Light Shadow */
+  inset 0 -5px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.on {
+  float: right;
+  margin-top: -20px;
+}
+
+.switch {
+  position: absolute;
+  top: 203px;
+  left: 115px;
+  height: 15px;
+  width: 15px;
+  background: skyblue;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), /* Exterior Shadow */
+  inset 0 2px rgba(255, 255, 255, 0.3), /* Top light Line */
+  inset 0 -2px rgba(255, 255, 255, 0.3), /* Bot light Line */
+  inset 0 1px rgba(255, 255, 255, 0.2), /* Top Light Shadow */
+  inset 0 10px 20px rgba(255, 255, 255, 0.25), /* Sides Light Shadow */
+  inset 0 -15px 10px rgba(0, 0, 0, 0.3);
+  /* Dark Background */
+}
+
+.switchon {
+  left: 133px;
+}
+
+.lightUp {
+  opacity: 1;
+  filter: brightness(400%);
+}
+
+
+@media (max-width: 750px) {
+  .wrapper {
+/*     height: 330px; */
+    width: 330px;
+  }
+  .back {
+    height: 330px;
+    width: 330px;
+    top: 50px;
+  }
+  .circle {
+    height: 125px;
+    width: 125px;
+    top: 97.5px;
+    left: 102.5px;
+
+  }
+  .logo{
+    font-size: 10px;
+  }
+  .pad {
+    height: 150px;
+    width: 150px;
+    margin: 3px;
+  }
+  .shape1glass {
+    margin-top: -8px;
+    margin-left: -8px;
+  }
+  .shape2glass {
+    margin-top: -8px;
+    margin-left: 3px;
+  }
+  .shape3glass {
+    margin-top: 3px;
+    margin-left: -8px;
+  }
+  .count {
+    height: 20px;
+    width: 25px;
+    margin-top: -68px;
+    margin-left: -42px;
+    font-size: 10px;
+  }
+  .start{
+    height: 15px;
+    width: 15px;
+    margin-top: -62px;
+    margin-left: -7px;
+  }
+  .reset{
+    height: 15px;
+    width: 15px;
+     margin-top: -62px;
+    margin-left: 18px;
+    margin-right: -20px;
+  }
+  .strict {
+    height: 15px;
+    width: 15px;
+    margin-top: -62px;
+    margin-left: 2px;
+  }
+  .countback {
+    height: 25px;
+    width: 30px;
+    margin-top: -70px;
+  }
+  .startback {
+    height: 20px;
+    width: 20px;
+    margin-top: -65px;
+    margin-left: -10px;
+    margin-right: -20px;
+  }
+  .resetback {
+    height: 20px;
+    width: 20px;
+    margin-top: -65px;
+    margin-left: 15px;
+  }
+  .longestback {
+    height: 20px;
+    width: 20px;
+     margin-top: -65px;
+    margin-left: 5px;
+  }
+  .ButtonLabels {
+    display: none;
+  }
+  .onoff{
+    left: 15px;
+    top: 85px;
+    font-size: 10px;
+  }
+  .box {
+    height: 20px;
+    width: 40px;
+  }
+  .switch {
+    top: 85px;
+    left: 45px
+  }
+  .switchon {
+    left: 70px;
+  }
+  .on {
+    margin-top: -15px;
+    margin-right: 10px;
+  }
+  .off {
+    margin-left: 8px;
+  }
+  .indicator {
+    top: 40px;
+    left: 100px;
+  }
+
+}

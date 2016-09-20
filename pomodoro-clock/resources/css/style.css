@@ -1,0 +1,134 @@
+body {
+  padding: 100px;
+/*   background-image: url("https://hd.unsplash.com/photo-1462759353907-b2ea5ebd72e7"); */
+  background-color: #333;
+  background-size: 100%;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+.container {
+  border: 2px solid gold;
+  border-radius: 50%;
+  height: 750px;
+  width: 750px;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/85/4a/73/854a73acefe283d353a62991917ec7d2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6)
+
+}
+
+.title {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 60px;
+  padding-top: 0px;
+  color: #fff;
+}
+
+.circ {
+  border-radius: 50%;
+  border: 1px solid #222;
+  height: 400px;
+  width: 400px;
+  margin-top: 80px;
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.6)
+/*   background-color: pink;  */
+}
+
+.session {
+  margin-top: 50px;
+  color: #fff;
+}
+
+.doorKnob {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+/*   border: 1px solid #fff; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.doorKnob2 {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+/*   border: 1px solid #fff; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pause1{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+/*   border: 1px solid #fff; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.resume{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+/*   border: 1px solid #fff; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pause2 {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+/*   border: 1px solid #fff; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.reset{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+/*   border: 1px solid #fff; */
+  border-radius: 50%;
+  cursor: pointer;
+}
+.timer {
+  color: #fff;
+  margin-top: 190px;
+  font-size: 40px;
+
+}
+
+.box {
+  height: 400px;
+  width: 400px;
+  background-color: #eee;
+}
+
+.lab {
+  color: #fff;
+}
+
+.timelen {
+  font-size: 40px;
+}
+.signs {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 40px;
+  cursor: pointer;
+}
